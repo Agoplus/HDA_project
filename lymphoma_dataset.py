@@ -34,6 +34,7 @@ class LymphomaDataset:
         self.train_dataset = self._create_dataset(self.train_split, 'train')
         self.val_dataset = self._create_dataset(self.val_split, 'val')
         self.test_dataset = self._create_dataset(self.test_split, 'test')
+        print("uwu")
 
     def _split(self):
         """
