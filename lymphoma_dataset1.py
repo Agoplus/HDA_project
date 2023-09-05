@@ -59,7 +59,7 @@ class LymphomaDataset:
         # Create a DataFrame from the data
         df = pd.DataFrame(df, columns=['file_path', 'label'])
         print(df)
-        df.iloc[1:]
+        df = df.iloc[1:]
         # transform labels to integers
         df['label'] = pd.factorize(df['label'])[0].astype(np.uint8)
         # perform stratified train, validation and test split
