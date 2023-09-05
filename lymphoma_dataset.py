@@ -41,6 +41,7 @@ class LymphomaDataset:
         :return: train, validation and test splits
         """
         df = []  # store file names and labels
+        print("miao")
         for directory, subdirectories, files in os.walk(self.dataset_path):
             for file in files:
                 # Get the full path of the file
