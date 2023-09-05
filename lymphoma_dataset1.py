@@ -6,8 +6,6 @@ from matplotlib import pyplot as plt
 from sklearn.model_selection import StratifiedShuffleSplit
 from skimage.color import rgb2gray, rgb2lab, rgb2hed
 
-def miao():
-    print("miao")
 
 class LymphomaDataset:
 
@@ -36,7 +34,6 @@ class LymphomaDataset:
         self.train_dataset = self._create_dataset(self.train_split, 'train')
         self.val_dataset = self._create_dataset(self.val_split, 'val')
         self.test_dataset = self._create_dataset(self.test_split, 'test')
-        print("uwu")
 
     def _split(self):
         """
@@ -58,7 +55,6 @@ class LymphomaDataset:
 
         # Create a DataFrame from the data
         df = pd.DataFrame(df, columns=['file_path', 'label'])
-        print(df)
         df = df.iloc[1:]
         # transform labels to integers
         df['label'] = pd.factorize(df['label'])[0].astype(np.uint8)
