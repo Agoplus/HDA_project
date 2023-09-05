@@ -6,6 +6,8 @@ from matplotlib import pyplot as plt
 from sklearn.model_selection import StratifiedShuffleSplit
 from skimage.color import rgb2gray, rgb2lab, rgb2hed
 
+def miao():
+    print("miao")
 
 class LymphomaDataset:
 
